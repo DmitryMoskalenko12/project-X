@@ -47,6 +47,26 @@
          <button class="time-converter__reset">Reset</button>
        </div>
     </div>
+
+
+    <!-- 2. daysCalculator -->
+
+    <div class="days-calculator">
+        <form class="days-calculator__form" id="age">
+            <label class="days-calculator__label"> Duration Calculator</label><br/><br/>
+            <label class="starting-date" for="starting-Date">Enter the Starting-Date</label><br/><br/>
+            <input type="date" name="Starting-Date" id="starting-Date"><br/><br/><br/>
+            <label for="ending-Date">Enter the Ending-Date</label><br/><br/>
+            <input type="date" name="ending-Date" id="ending-Date">
+            <span id = "message" style="color:rgb(255, 0, 0)"> </span> <br><br>
+            <button class="days-calculator__reset" id="button1" type="reset">Reset</button>
+            <button class="days-calculator__submit" type="submit">Submit</button><br/><br/><br/>
+            <div class="outterbox">
+                <div class="box"><span id="resultAge"></span></div>
+            </div>
+            <!-- <span id="resultAge"></span> -->
+        </form>
+    </div>
   </main>
   <script src="./index.js"></script>
 </body>
