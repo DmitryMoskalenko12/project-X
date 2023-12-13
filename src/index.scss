@@ -11,4 +11,15 @@
 .days-calculator {
     width: 400px;
     margin: 0 auto;
+
+    &__error {
+        color: rgb(255, 0, 0)
+    }
+}
+
+// 3. weigh-converter
+
+.weigh-converter {
+    width: 400px;
+    margin: 0 auto; 
 }
