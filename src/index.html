@@ -99,7 +99,77 @@
         </form>
     </div>
 
+<!-- 4. heronsCalculator -->
+<hr>
+    <div class="herons-calculator">
+        <div class="calculator-name-header">
+            <span>Heron's Calculator</span>
+        </div>
+        <form class="form-horizontal" id="age">
+            <label class="heading"> Find Area of Triangle using Heron's Formula</label><br /><br />
+            <p class="infoDeriv">This calculator will find the Area of the triangle upon entering its three sides.</p>
+            <label class="func" for="side1">Side A : </label><br /><br />
+            <input type="number" name="func" id="side1" placeholder="Enter side A" value="23"><br /><br /><br />
+            <label class="func" for="side2">Side B : </label><br /><br />
+            <input type="number" value="12" name="func" id="side2" placeholder="Enter side B"><br /><br /><br />
+            <label class="func" for="side3">Side C : </label><br /><br />
+            <input type="number" name="func" value="34" id="side3" placeholder="Enter Side C"><br /><br /><br />
+            <button class="herons-calculator__validate" type="button" style="cursor: pointer;">Submit</button><br /><br /><br />
+            <button class="reset" type="reset" style="cursor: pointer;">Reset</button><br /><br /><br />
+            <span id="inputExpression"></span>
+            <div class="outterbox">
+                <div class="box"><span id="resultDeriv"></span></div>
+            </div>
+        </form>
+    </div>
 
+<!-- 5. temperature-calc -->
+<hr>
+    <div class="temperature-calc">
+        <div class="calculator-name-header">
+            <span>Temperature calculator</span>
+          </div>
+        <form id="tempCalc">
+            <label for="temp">Please enter the temperature you'd like to convert</label><br/><br/>
+            <input type="number" name="temp" id="temp" placeholder="Enter Temperature">
+            <select name="temp_diff" id="temp_diff">
+                <option value="cel_fah">Celsius to Fahrenheit</option>
+                <option value="fah_cel">Fahrenheit to Celsius</option>
+                <option value="cel_kel">Celsius to Kelvin</option>
+                <option value="kel_cel">Kelvin to Celsius</option>
+                <option value="fah_kel">Fahrenheit to Kelvin</option>
+                <option value="kel_fah">Kelvin to Fahrenheit</option>
+            </select><br/>
+            <button class="temperature-calc__reset" type="button" id="tempSet" style="cursor: pointer;">reset</button>
+            <button class="temperature-calc__submit" type="button" style="cursor: pointer;">Submit</button><br/><br/><br/>
+            <div class="outterbox"> 
+                <div class="box"><span id="resultContainer"></span></div>
+            </div>
+        </form>
+    </div>
+
+    <!-- pythagoras-theorem-calculator -->
+<hr>
+   <div class="pythagoras">
+    <div class="calculator-name-header">
+        <span>Pythagoras Theorem Calculator</span>
+    </div>
+    <form class="pythagoras__submit" id="age">
+        <label class="heading"> Calculates the Third side of the Rt.Angled Triangle</label><br /><br />
+        <p class="infoDeriv">This calculator will use <b>Pythagoras Theorem</b> to calculate any side of the right
+            angled Triangle provided two sides are given
+        </p>
+        <label class="func" for="sideA">Side A : </label><br /><br />
+        <input type="number" name="func" id="sideA" placeholder="Enter side A"><br /><br /><br />
+        <label class="func" for="sideB">Side B : </label><br /><br />
+        <input type="number" name="func" id="sideB" placeholder="Enter side B"><br /><br /><br />
+        <label class="func" for="hypo">Hypotenuse : </label><br /><br />
+        <input type="number" name="func" id="hypo"><br /><br /><br />
+        <button  style="cursor: pointer;">Submit</button><br /><br /><br />
+        <button class="reset" type="reset" style="cursor: pointer;">Reset</button><br /><br /><br />
+
+    </form>
+   </div>
   </main>
   <script src="./index.js"></script>
 </body>
