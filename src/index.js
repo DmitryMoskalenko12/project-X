@@ -8,6 +8,8 @@ import calculateTemp from './modules/temperatureCalc';
 import pythagoras from './modules/pythagoras';
 import speedCalculator from './modules/speedCalculator';
 import volumeCalculator from './modules/volumeCalculatore';
+import ibmCalculator from './modules/ibmCalculator';
+import lengthConverter from './modules/lengthConverter';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -18,4 +20,6 @@ window.addEventListener('DOMContentLoaded', () => {
     pythagoras();
     speedCalculator();
     volumeCalculator();
+    ibmCalculator();
+    lengthConverter();
 });

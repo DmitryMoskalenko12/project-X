@@ -210,7 +210,7 @@
    </div>
 <hr>
 
-<!-- volume-units-converter -->
+<!-- 8. volume-units-converter -->
 
    <div class="volume-units-converter">
     <div class="calculator-name-header">
@@ -301,6 +301,65 @@
         </div>
       </div>
    </div>
+
+<!-- 9. BMI-calculator -->
+<hr>
+<div class="bmi-calculator">
+    <div class="calculator-name-header">
+        <!-- Updated by @Shantanu-Meta   -->
+        <span>BMI calculator</span>
+      </div>
+      <form class="form-horizontal" id="bMI">
+        <label for="wei">Please enter your weight (in Kgs):</label>
+        <input type="number" name="wei" id="wei" placeholder="Weight" /><br /><br />
+        <label for="hei">Please enter your height (in Inches):</label>
+        <input type="number" name="hei" id="hei" placeholder="Height" /><br /><br />
+    
+        <button class="bmi-calculator__reset" type="reset" >reset</button>
+        <button class="bmi-calculator__submit" type="button">Submit</button><br /><br /><br />
+        <div class="outterbox">
+          <div class="box"><span id="resultBMI"></span></div>
+        </div>
+        <br />
+        <span id="resultBMImsg"></span><br /><br />
+        <div id="bmiImg"></div>
+      </form>
+</div>
+<hr>
+<!-- 10. length-converter -->
+<div class="length-converter">
+    <div class="calculator-name-header">
+        <span>Length calculator</span>
+      </div>
+    <div class="container">
+        
+        <p class="top-txt">Enter value in any of the fields to convert between Length measurements:</p>
+        <div class="inputContainer">
+            <label for="feet">Feet</label><input class="length-converter__feet" type="number" name="" id="feet">
+        </div>
+        <div class="inputContainer">
+            <label for="meter">Meters</label><input class="length-converter__meter" type="number" name="" id="meter">
+        </div>
+        <div class="inputContainer">
+            <label for="inches">Inches</label><input class="length-converter__inches" type="number" name="" id="inches">
+        </div>
+        <div class="inputContainer">
+            <label for="cm">Centimeters</label><input class="length-converter__cm" type="number" name="" id="cm">
+        </div>
+        <div class="inputContainer">
+            <label for="yards">Yards</label><input class="length-converter__yards"  type="number" name="" id="yards">
+        </div>
+        <div class="inputContainer">
+            <label for="km">Kilometers</label><input class="length-converter__km" type="number" name="" id="km">
+        </div>
+        <div class="inputContainer">
+            <label for="miles">Miles</label><input class="length-converter__miles" type="number" name="" id="miles">
+        </div>
+        <div class="length-converter__button">
+            <button style="height: 30px; width: 100px; font-size: large; margin-top: 10px; background-color: black; color: aliceblue;">reset</button>
+        </div>
+    </div>        
+</div>
 
 
   </main>
