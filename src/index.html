@@ -148,7 +148,7 @@
         </form>
     </div>
 
-    <!-- pythagoras-theorem-calculator -->
+    <!--6. pythagoras-theorem-calculator -->
 <hr>
    <div class="pythagoras">
     <div class="calculator-name-header">
@@ -170,6 +170,46 @@
 
     </form>
    </div>
+
+   <!--7. speed-calculator -->
+<hr>
+   <div class="speed-calculator">
+    <div class="calculator-name-header">
+        <span>Speed Converter</span>
+      </div>
+      <form class="speed-calculator__form">
+        <label for="input">Input:</label>
+        <input class="speed-calculator__weight" type="number" name="input" /><br />
+        <label for="from">From:</label>
+        <select class="speed-calculator__from" id="from" name="from" style="margin-top: 2%; font-size: 20px">
+          <option value="cm/s">centimeters per second</option>
+          <option value="m/s">metres per second</option>
+          <option value="km/h">kilometers per hour</option>
+          <option value="f/s">feet per second</option>
+          <option value="miles/s">miles per second</option>
+          <option value="knots">knots</option>
+          <option value="mach">mach</option></select
+        ><br />
+        <label for="to">To:</label>
+        <select class="speed-calculator__to" id="to" name="to" style="margin-top: 2%; font-size: 20px">
+          <option value="cm/s">centimeters per second</option>
+          <option value="m/s">metres per second</option>
+          <option value="km/h">kilometers per hour</option>
+          <option value="f/s">feet per second</option>
+          <option value="miles/s">miles per second</option>
+          <option value="knots">knots</option>
+          <option value="mach">mach</option></select
+        ><br />
+        <button class="speed-calculator__reset" type="button" style="cursor: pointer;">Reset</button>
+        <button class="speed-calculator__convert" type="button" style="cursor: pointer;">Convert</button
+        ><br /><br /><br />
+        <div class="outterbox">
+          <div class="box"><span class="speed-calculator__result"></span></div>
+        </div>
+      </form>
+   </div>
+
+
   </main>
   <script src="./index.js"></script>
 </body>
