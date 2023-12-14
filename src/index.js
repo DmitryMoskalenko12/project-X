@@ -7,6 +7,7 @@ import heronsFormula from './modules/heronsFormula';
 import calculateTemp from './modules/temperatureCalc';
 import pythagoras from './modules/pythagoras';
 import speedCalculator from './modules/speedCalculator';
+import volumeCalculator from './modules/volumeCalculatore';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -16,4 +17,5 @@ window.addEventListener('DOMContentLoaded', () => {
     calculateTemp();
     pythagoras();
     speedCalculator();
+    volumeCalculator();
 });
