@@ -18,6 +18,7 @@ import feetToMiles from './modules/feetToMiles';
 import lbsToKg from './modules/lbsToKg';
 import mlToGrams from './modules/mlToGrams';
 import ouncesToKilograms from './modules/ouncesToKilograms';
+import cupsToOunces from './modules/cupsToOunces';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -38,4 +39,5 @@ window.addEventListener('DOMContentLoaded', () => {
     lbsToKg();
     mlToGrams();
     ouncesToKilograms();
+    cupsToOunces();
 });
