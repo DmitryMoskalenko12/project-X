@@ -433,24 +433,361 @@
 </div>
 </div>
 
-<!-- steps-to-miles -->
+<!-- 12. steps-to-miles -->
+<hr>
+<div class="steps-to-miles">
+  <table class="table table-bordered">
+    <tr class="header2">
+      <td colspan="3"><h2>Convert Steps to Miles</h2></td>
+    </tr>
+    <tr>
+      <td colspan="2"><input class="steps-to-miles__male" id="male" type="radio" name="gender" value="male" checked>Men
+        <input class="steps-to-miles__female" type="radio" id="female" name="gender" value="female">Women
+      </td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Steps</span><input class="steps-to-miles__steps" id="steps" type="text" value="0"></td>
+      <td><span class="field_text">Miles</span><input class="steps-to-miles__miles" id="miles" type="text" value="0"></td>
+    </tr>
+    </table>
+</div>
+<hr>
 
+<!--13. hour-salary-calculator -->
+
+<div class="hour-salary-calculator">
+  <table class="table table-bordered">
+    <tr class="header2">
+        <td colspan="2"><h2>Hourly to Salary Calculator</h2></td>
+    </tr>
+<tr>
+    <td><span class="field_text">Working Period:</span></td>
+    <td>
+      <select name="ctl00$MainContent$ddlWorkingPeriod" id="ctl00_MainContent_ddlWorkingPeriod" class="hour-salary-calculator__period">
+        <option selected="selected" value="Hourly">Hourly</option>
+        <option value="Weekly">Weekly</option>
+        <option value="Bi-Weekly">Bi-Weekly</option>
+        <option value="Semi-Monthly">Semi-Monthly</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Quarterly">Quarterly</option>
+        <option value="Semi-Annually">Semi-Annually</option>
+        <option value="Annually">Annually</option>
+     </select>
+    </td>
+</tr>        
+<tr>
+    <td width="200"><span class="field_text">Amount Made:</span></td>
+    <td><input name="ctl00$MainContent$txtAmountMade" type="text" value="25" id="ctl00_MainContent_txtAmountMade" class="hour-salary-calculator__amount" /> $
+    <span id="ctl00_MainContent_RequiredFieldValidator1" style="color:Red;display:none;"></span>
+    <span id="ctl00_MainContent_RegularExpressionValidator18" style="color:Red;display:none;"></span>
+    </td>
+</tr>
+<tr>
+    <td><span class="field_text">Hours Per Week:</span></td>
+    <td><input name="ctl00$MainContent$txtHoursPerWeek" type="text" value="40" id="ctl00_MainContent_txtHoursPerWeek" class="hour-salary-calculator__week" />
+    <span id="ctl00_MainContent_RequiredFieldValidator3" style="color:Red;display:none;"></span>
+    <span id="ctl00_MainContent_RegularExpressionValidator2" style="color:Red;display:none;"></span>
+    </td>
+</tr>
+</table>
+<table class="table table-bordered">
+  <tr class="header">
+      <td colspan="2"><h3>Salary Conversion Calculator Results</h3></td>
+  </tr>
+  <tr>
+      <td width="200"><b>Hourly:</b></td>
+      <td>$<span class="hour-salary-calculator__hourly" id="lblHourly">25.00</span></td>
+  </tr>
+  <tr>
+      <td><b>Weekly:</b></td>
+      <td>$<span class="hour-salary-calculator__weekly" id="lblWeekly">1,000.00</span></td>
+  </tr>
+  <tr>
+      <td><b>Bi-Weekly:</b></td>
+      <td>$<span class="hour-salary-calculator__bi-weekly" id="lblBiWeekly">2,000.00</span></td>
+  </tr>
+  <tr>
+      <td><b>Semi-Monthly:</b></td>
+      <td>$<span class="hour-salary-calculator__semi-monthly" id="lblSemiMonthly">2,166.67</span></td>
+  </tr>
+  <tr>
+      <td><b>Monthly:</b></td>
+      <td>$<span class="hour-salary-calculator__monthly" id="lblMonthly">4,333.33</span></td>
+  </tr>
+  <tr>
+      <td><b>Quarterly:</b></td>
+      <td>$<span class="hour-salary-calculator__quarterly" id="lblQuarterly">13,000.00</span></td>
+  </tr>
+  <tr>
+      <td><b>Semi-Annually:</b></td>
+      <td>$<span class="hour-salary-calculator__semi-annually" id="lblSemiAnnually">26,000.00</span></td>
+  </tr>
+  <tr>
+      <td><b>Annually:</b></td>
+      <td>$<span class="hour-salary-calculator__annually" id="lblAnnually">52,000.00</span></td>
+  </tr>                                                               
+</table>
+</div>
+<hr>
+
+<!-- 14.percent-calculator -->
+
+<div class="percent-calculator">
+  <table class="table table-bordered">
+    <tr class="header2">
+        <td colspan="5"><h2>Percent Calculator</h2></td>
+    </tr>
+<tr>
+    <td><span class="field_text">What is </span> <input name="ctl00$MainContent$txtNumber1A" type="text" id="ctl00_MainContent_txtNumber1A" class="percent-calculator__what-is" style="width:75px;" />
+    <span class="field_text"> % of </span><input name="ctl00$MainContent$txtNumber1B" type="text" id="ctl00_MainContent_txtNumber1B" class="percent-calculator__of" style="width:75px;" /> <span class="field_text">?</span>
+    = <span class="percent-calculator__result1"></span>
+    <br /><br />
+    </td>
+</tr>
+</table>
+ <table class="table table-bordered">
+  <tr>
+    <td><input name="ctl00$MainContent$txtNumber2A" type="text" id="ctl00_MainContent_txtNumber2A" class="percent-calculator__is-what" style="width:75px;" /><span class="field_text"> is what percent of </span>
+    <input name="ctl00$MainContent$txtNumber2B" type="text" id="ctl00_MainContent_txtNumber2B" class="percent-calculator__is-what-res" style="width:75px;" /> <span class="field_text">?</span>
+    = <span class="percent-calculator__result2"></span>
+    </td>
+</tr>
+</table> 
 <table class="table table-bordered">
   <tr class="header2">
-    <td colspan="3"><h2>Convert Steps to Miles</h2></td>
-  </tr>
+        <td><h2>Percentage Increase Calculator</h2></td>
+    </tr>
   <tr>
-    <td colspan="2"><input id="male" type="radio" name="gender" value="male" onchange="calculate()" checked>Men
-      <input type="radio" id="female" name="gender" onchange="calculate()" value="female">Women
+    <td><span class="field_text"> What is the percentage increase/decrease <br />
+from </span><input name="ctl00$MainContent$txtNumber3A" type="text" id="ctl00_MainContent_txtNumber3A" class="percent-calculator__from" style="width:75px;" /> <span class="field_text"> to </span>
+   <input name="ctl00$MainContent$txtNumber3B" type="text" id="ctl00_MainContent_txtNumber3B" class="percent-calculator__to" style="width:75px;" /> <span class="field_text">?</span>
+    = <span class="percent-calculator__result3"></span>
+    <span class="field_text"></span>
+    <br /><br />
     </td>
-  </tr>
-  <tr>
-    <td><span class="field_text">Steps</span><input id="steps" type="text" value="2112" class="input-custom" onkeyup="calculateBySteps()"></td>
-    <td><span class="field_text">Miles</span><input id="miles" type="text" value="1" class="input-custom" onkeyup="calculateByMiles()"></td>
-  </tr>
-  </table>
+</tr>    
+</table>
+</div>
 
-  
+<!-- 15. feet-to-miles -->
+<hr>
+<div class="feet-to-miles">
+  <table class="table table-bordered">
+    <tr class="header2">
+       <td colspan="2"><h2>Convert Feet to Miles</h2></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Feet</span> <input id="feet" type="text" class="feet-to-miles__feet"></td>
+      <td><span class="field_text">Mile</span> <input id="mile" type="text" class="feet-to-miles__miles"></td>
+    </tr>
+    </table>
+    <table class="table table-bordered">
+    <tr class="header2">
+       <td colspan="2">Other Conversions</td>
+    </tr>
+    <tr>
+    <td width="150"><span class="field_text">Feet:</span></td>
+    <td><span class="feet-to-miles__feet1"></span></td>
+    </tr>
+    <tr>
+    <td><span class="field_text">mile:</span></td>
+    <td><span class="feet-to-miles__miles1"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Meters:</span></td>
+      <td> <span class="feet-to-miles__meters" id="meters"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">inches:</span></td>
+      <td> <span class="feet-to-miles__inches" id="inches"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Yards:</span> </td>
+      <td><span class="feet-to-miles__yards" id="yards"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Kilometers:</span></td>
+      <td><span class="feet-to-miles__kilometeres" id="kilometers"></span></td>
+      </tr>
+    <tr>
+      <td><span class="field_text">cm:</span></td>
+      <td><span class="feet-to-miles__cm" id="cm"></span></td>
+    </tr>
+    </table>
+</div>
+<hr>
+<!-- 16.lbs-to-kg -->
+
+<div class="lbs-to-kg">
+  <table class="table table-bordered">
+    <tr class="header2">
+       <td colspan="2"><h2>Pounds to KG</h2></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Pounds</span> <input id="pounds" type="text" class="lbs-to-kg__pounds"></td>
+      <td><span class="field_text">Kilograms</span> <input id="kg" type="text" class="lbs-to-kg__kg"></td>
+    </tr>
+    </table>
+    <table class="table table-bordered">
+    <tr class="header2">
+       <td colspan="3">Pound Converter</td>
+    </tr>
+    <tr>
+    <td width="180"><span class="field_text">Pounds (lb):</span></td>
+    <td><span class="lbs-to-kg__pounds1"></span></td>
+    </tr>
+    <tr>
+    <td><span class="field_text">Kilograms (kg):</span></td>
+    <td><span class="lbs-to-kg__kg1"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Grams (g):</span></td>
+      <td> <span class="lbs-to-kg__grams"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Metric tons (t):</span></td>
+      <td> <span class="lbs-to-kg__mtons"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Milligrams (mg):</span> </td>
+      <td><span class="lbs-to-kg__milligrams"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Micrograms (mcg):</span></td>
+      <td><span class="lbs-to-kg__micrograms"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Stones (st):</span></td>
+      <td><span class="lbs-to-kg__stones"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Ounces (oz):</span></td>
+      <td><span class="lbs-to-kg__ounces"></span></td>
+    </tr>
+    </table>
+</div>
+
+<!-- 17. ml-to-grams -->
+<hr>
+<div class="ml-to-grams">
+  <table class="table table-bordered">
+    <tr class="header2">
+      <td colspan="2"><h2>Convert Grams to mL</h2></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Grams</span> <input id="grams" type="text" value="1" class="ml-to-grams__grams"></td>
+      <td><span class="field_text">Milliliters</span> <input id="ml" type="text" value="1" class="ml-to-grams__ml"></td>
+    </tr>
+    </table>
+    <table class="table table-bordered">
+    <tr class="header2">
+      <td colspan="2">Grams Conversion</td>
+    </tr>
+    <tr>
+      <td width="50%"><span class="field_text">Grams:</span></td>
+      <td><span class="ml-to-grams__grams1">1</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">mL/milliliter:</span></td>
+      <td><span class="ml-to-grams__ml1">1</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Kilograms(kg):</span></td>
+      <td><span class="ml-to-grams__kg">0.001</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Milligrams(mg):</span> </td>
+      <td><span class="ml-to-grams__milligrams">1000</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Micrograms(mcg):</span></td>
+      <td><span class="ml-to-grams__micrograms">1000000</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Pounds:</span></td>
+      <td><span class="ml-to-grams__pounds">0.0022</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Metric tons(t):</span></td>
+      <td> <span class="ml-to-grams__metric-tons">0</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Imperial tons:</span></td>
+      <td> <span class="ml-to-grams__imperial-tons">0</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">US tons:</span></td>
+      <td> <span class="ml-to-grams__us-tons">0</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Stones(st):</span></td>
+      <td><span class="ml-to-grams__stones">0.00016</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Ounces(oz):</span></td>
+      <td><span class="ml-to-grams__ounces">0.03527</span></td>
+    </tr>
+    </table>
+</div>
+<hr>
+<!-- 18. ounces-to-kilograms -->
+<div class="ounces-to-kilograms">
+  <table class="table table-bordered">
+    <tr class="header2">
+      <td colspan="2"><h2>Ounces to Kilograms</h2></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Ounces</span> <input id="ounces" type="text" class="ounces-to-kilograms__ounces"></td>
+      <td><span class="field_text">Kilograms</span> <input id="kg" type="text" class="ounces-to-kilograms__kg"></td>
+    </tr>
+    </table>
+    <table class="table table-bordered">
+    <tr class="header2">
+        <td colspan="2">Kilogram Conversion</td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Ounce(oz):</span></td>
+      <td><span class="ounces-to-kilograms__ounces1"></span></td>
+    </tr>
+    <tr>
+      <td width="200"><span class="field_text">Kilogram(kg):</span></td>
+      <td><span class="ounces-to-kilograms__kg1"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Pounds(lb):</span></td>
+      <td><span class="ounces-to-kilograms__pounds" id="pounds"></span></td>
+    </tr>
+    <tr>
+      <td width="200"><span class="field_text">Stones(st):</span></td>
+      <td><span class="ounces-to-kilograms__stones"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Metric tons(t):</span></td>
+      <td><span class="ounces-to-kilograms__metric-tons"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Milligrams(mg):</span> </td>
+      <td><span class="ounces-to-kilograms__milligrams"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Micrograms(mcg):</span></td>
+      <td><span class="ounces-to-kilograms__micrograms"></span></td>
+    </tr>
+    
+    <tr>
+      <td><span class="field_text">Grams(g):</span></td>
+      <td><span class="ounces-to-kilograms__grams"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">US Ton:</span></td>
+      <td><span class="ounces-to-kilograms__us-tons"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Imperial Ton:</span></td>
+      <td><span class="ounces-to-kilograms__imperial-tons"></span></td>
+    </tr>
+    </table>
+</div>
   </main>
   <script src="./index.js"></script>
 </body>

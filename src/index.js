@@ -11,6 +11,13 @@ import volumeCalculator from './modules/volumeCalculatore';
 import ibmCalculator from './modules/ibmCalculator';
 import lengthConverter from './modules/lengthConverter';
 import powerCalculator from './modules/powerCalculator';
+import stepsToMiles from './modules/steps-to-miles';
+import hourSalaryCalculator from './modules/hourSalaryCalculator';
+import percentCalculator from './modules/percentCalculator';
+import feetToMiles from './modules/feetToMiles';
+import lbsToKg from './modules/lbsToKg';
+import mlToGrams from './modules/mlToGrams';
+import ouncesToKilograms from './modules/ouncesToKilograms';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -24,4 +31,11 @@ window.addEventListener('DOMContentLoaded', () => {
     ibmCalculator();
     lengthConverter();
     powerCalculator();
+    stepsToMiles();
+    hourSalaryCalculator();
+    percentCalculator();
+    feetToMiles();
+    lbsToKg();
+    mlToGrams();
+    ouncesToKilograms();
 });
