@@ -10,6 +10,7 @@ import speedCalculator from './modules/speedCalculator';
 import volumeCalculator from './modules/volumeCalculatore';
 import ibmCalculator from './modules/ibmCalculator';
 import lengthConverter from './modules/lengthConverter';
+import powerCalculator from './modules/powerCalculator';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -22,4 +23,5 @@ window.addEventListener('DOMContentLoaded', () => {
     volumeCalculator();
     ibmCalculator();
     lengthConverter();
+    powerCalculator();
 });
