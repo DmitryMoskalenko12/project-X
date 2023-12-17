@@ -19,6 +19,7 @@ import lbsToKg from './modules/lbsToKg';
 import mlToGrams from './modules/mlToGrams';
 import ouncesToKilograms from './modules/ouncesToKilograms';
 import cupsToOunces from './modules/cupsToOunces';
+import teaspoonsToGrams from './modules/teaspoonsToGrams';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -40,4 +41,5 @@ window.addEventListener('DOMContentLoaded', () => {
     mlToGrams();
     ouncesToKilograms();
     cupsToOunces();
+    teaspoonsToGrams();
 });
