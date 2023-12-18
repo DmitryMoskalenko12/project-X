@@ -22,6 +22,8 @@ import cupsToOunces from './modules/cupsToOunces';
 import teaspoonsToGrams from './modules/teaspoonsToGrams';
 import mmToInches from './modules/mmToInches';
 import randomNumber from './modules/randomNumber';
+import marginCalculator from './modules/marginCalculator';
+import areaOfCircle from './modules/areaOfCircle';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -46,4 +48,6 @@ window.addEventListener('DOMContentLoaded', () => {
     teaspoonsToGrams();
     mmToInches();
     randomNumber();
+    marginCalculator();
+    areaOfCircle();
 });

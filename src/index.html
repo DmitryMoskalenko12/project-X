@@ -1040,7 +1040,96 @@ from </span><input name="ctl00$MainContent$txtNumber3A" type="text" id="ctl00_Ma
     </tr>
 </table>
 </div>
+
+<!-- 23.margin-calculator -->
+<hr>
+<div class="margin-calculator">
+  <table class="table table-bordered">
+    <tr class="header2">
+        <td colspan="2">
+            <h2>Markup Percentage Calculator</h2>
+        </td>
+    </tr>
+    <tr>
+        <td width="150">
+            <span class="field_text">Cost:</span>
+        </td>
+        <td>
+            <input name="ctl00$MainContent$txtCost" type="text" id="ctl00_MainContent_txtCost" class="margin-calculator__cost"/>$
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span class="field_text">Markup:</span>
+        </td>
+        <td>
+            <input name="ctl00$MainContent$txtMarkup" type="text" id="ctl00_MainContent_txtMarkup" class="margin-calculator__markup"/>%
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span class="field_text">Revenue:</span>
+        </td>
+        <td>
+            <input name="ctl00$MainContent$txtRevenue" type="text" id="ctl00_MainContent_txtRevenue" class="margin-calculator__revenue" />$
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <span class="field_text">Profit:</span>
+        </td>
+        <td>
+            <input name="ctl00$MainContent$txtProfit" type="text" id="ctl00_MainContent_txtProfit" class="margin-calculator__profit"/>$
+        </td>
+    </tr>
+</table>
+<table class="table table-bordered">
+    <tr class="header">
+        <td colspan="2">
+            <h3>Margin Markup Calculator</h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="150">
+            <span class="field_text">Margin</span>
+        </td>
+        <td>
+            <span class="margin-calculator__result"></span>
+        </td>
+    </tr>
+</table>
+</div>
+
+<!-- 24. areaOfCircle -->
+<hr>
+<div class="area-of-circle">
+  <input type="radio" id="areaofacircleRadio" class="area-of-circle__area-circle" name="variables" checked>
+  <label for="areaofacircleRadio">Area of a circle</label>
+
+  <input type="radio" class="area-of-circle__radius-area" id="radiusofthecircleRadio" name="variables">
+  <label for="radiusofthecircleRadio">Radius of the circle</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" class="area-of-circle__label">Radius of the circle</label>
+  <input type="number" class="area-of-circle__v1" id="v1"><br><br>
+
+  <button class="area-of-circle__btn">compute</button>
+
+  <p class="area-of-circle__result" id="result"></p>
+  <p>
+    Insert the information in the form and the calculator will determine the area of a circle calculator<br> 
+    What is the area of a circle calculator?<br>
+    The area of a circle is the region that is enclosed by a circle.<br>
+    How to calculate area of a circle calculator?<br>
+    To calculate area of a circle calculator you should use the following formula:<br>
+    A = π * r^2<br>
+    where:<br>
+    r = radius<br>
+    Why use area of a circle calculator?<br>
+    The area of a circle calculator is used in order to measure the space enclosed by a circle.<br>
+</p>
+</div>
   </main>
-  <script src="./index.js"></script>
+  <script defer src="./index.js"></script>
 </body>
 </html>
