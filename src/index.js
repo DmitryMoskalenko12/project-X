@@ -20,6 +20,8 @@ import mlToGrams from './modules/mlToGrams';
 import ouncesToKilograms from './modules/ouncesToKilograms';
 import cupsToOunces from './modules/cupsToOunces';
 import teaspoonsToGrams from './modules/teaspoonsToGrams';
+import mmToInches from './modules/mmToInches';
+import randomNumber from './modules/randomNumber';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -42,4 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
     ouncesToKilograms();
     cupsToOunces();
     teaspoonsToGrams();
+    mmToInches();
+    randomNumber();
 });

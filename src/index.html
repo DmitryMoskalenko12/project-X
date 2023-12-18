@@ -965,6 +965,81 @@ from </span><input name="ctl00$MainContent$txtNumber3A" type="text" id="ctl00_Ma
     </tr>
     </table>
 </div>
+
+<!-- 21. mm-to-inches -->
+<hr>
+<div class="mm-to-inches">
+  <table class="table table-bordered">
+    <tr class="header2">
+       <td colspan="2"><h2>Convert MM to Inches</h2></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Millimeter</span> <input id="mm" value="1" type="text" class="mm-to-inches__mm"></td>
+      <td><span class="field_text">Inches</span> <input id="inches" type="text" class="mm-to-inches__inches"></td>
+    </tr>
+    </table>
+    
+    <table class="table table-bordered">
+    <tr class="header2">
+       <td colspan="2">Conversion to Other Lengths</td>
+    </tr>
+    <tr>
+    <td><span class="field_text">MM:</span></td>
+    <td><span class="mm-to-inches__mm1"></span></td>
+    </tr>
+    <tr>
+    <td width="150"><span class="field_text">Inches:</span></td>
+    <td><span class="mm-to-inches__inches1"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Meters:</span></td>
+      <td> <span class="mm-to-inches__meters"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Feet:</span></td>
+      <td> <span class="mm-to-inches__feet"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Yards:</span> </td>
+      <td><span class="mm-to-inches__yards"></span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Kilometers:</span></td>
+      <td><span class="mm-to-inches__kilometers"></span></td>
+      </tr>
+    <tr>
+      <td><span class="field_text">Miles:</span></td>
+      <td><span class="mm-to-inches__miles"></span></td>
+    </tr>
+    </table>
+</div>
+
+<!-- 22. random-number -->
+<hr>
+<div class="random-number">
+  <table class="table table-bordered">
+    <tr class="header2">
+        <td colspan="2"><h2>Pick a Number</h2></td>
+    </tr>
+<tr>
+    <td>
+        <span class="field_text">between</span> <input name="ctl00$MainContent$txtMin" type="text" value="1" id="ctl00_MainContent_txtMin" class="random-number__between" style="width:125px;" /> <span class="field_text">and</span>
+        <input name="ctl00$MainContent$txtMax" type="text" value="100" id="ctl00_MainContent_txtMax" class="random-number__and" style="width:125px;" /> 
+    </td>
+</tr>
+<tr>
+    <td><button class="random-number__generate">Generate Number</button></td>
+  </tr> 
+</table>
+<table class="table table-bordered">
+    <tr class="header">
+        <td><h3>Random Number</h3></td>
+    </tr>
+    <tr>
+        <td><span class="random-number__result" ></td>
+    </tr>
+</table>
+</div>
   </main>
   <script src="./index.js"></script>
 </body>
