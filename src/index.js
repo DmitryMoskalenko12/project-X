@@ -24,6 +24,7 @@ import mmToInches from './modules/mmToInches';
 import randomNumber from './modules/randomNumber';
 import marginCalculator from './modules/marginCalculator';
 import areaOfCircle from './modules/areaOfCircle';
+import moneyCounter from './modules/moneyCounter';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -50,4 +51,5 @@ window.addEventListener('DOMContentLoaded', () => {
     randomNumber();
     marginCalculator();
     areaOfCircle();
+    moneyCounter();
 });
