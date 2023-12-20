@@ -26,6 +26,7 @@ import marginCalculator from './modules/marginCalculator';
 import areaOfCircle from './modules/areaOfCircle';
 import moneyCounter from './modules/moneyCounter';
 import factoring from './modules/factoring';
+import ratioSimplifier from './modules/ratioSimplifier';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -54,4 +55,5 @@ window.addEventListener('DOMContentLoaded', () => {
     areaOfCircle();
     moneyCounter();
     factoring();
+    ratioSimplifier();
 });
