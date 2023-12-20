@@ -27,6 +27,7 @@ import areaOfCircle from './modules/areaOfCircle';
 import moneyCounter from './modules/moneyCounter';
 import factoring from './modules/factoring';
 import ratioSimplifier from './modules/ratioSimplifier';
+import triangleCalculator from './modules/triangleCalculator';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -56,4 +57,5 @@ window.addEventListener('DOMContentLoaded', () => {
     moneyCounter();
     factoring();
     ratioSimplifier();
+    triangleCalculator();
 });

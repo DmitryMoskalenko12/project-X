@@ -1235,6 +1235,88 @@ from </span><input name="ctl00$MainContent$txtNumber3A" type="text" id="ctl00_Ma
     </tr>
 </table>   
 </div>
+
+<!-- 28.  -->
+
+<div class="triangle-calculator">
+  <table class="table table-bordered">
+    <tr class="header2">
+       <td colspan="2"><h2>Right Angle Triangle Calculator</h2></td>
+    </tr>
+    <tr>
+      <td><span class = "field_text">Known </span></td>
+      <td><select id="unit" class="triangle-calculator__unit" style="width:240px">
+        <option  value="sideAB">Leg a + Leg b</option>
+        <option  value="sideBC">Leg b + Hypotenuse c</option>
+        <option  value="sideAC">Leg a + Hypotenuse c</option>
+        <option  value="angleXlegA">Angle X + Leg a</option>
+        <option  value="angleXlegB">Angle X + Leg b</option>
+        <option  value="angleXlegC">Angle X + Hypotenuse c</option>
+        <option  value="angleYlegA">Angle Y + Leg a</option>
+        <option  value="angleYlegB">Angle Y + Leg b</option>
+        <option  value="angleYlegC">Angle Y + Hypotenuse c</option>
+      </select>
+      </td>
+    </tr>
+    <tr id="side_a_display" style="visibility:visible;">
+      <td><span class="field_text">Leg a</span></td>
+      <td><input id="side_a" class="triangle-calculator__side-a" value="25"></td>
+    </tr>
+    <tr id="side_b_display" style="visibility:visible;">
+      <td><span class="field_text">Leg b</span></td>
+      <td><input id="side_b" class="triangle-calculator__side-b" value="35"></td>
+    </tr>
+    <tr id="side_c_display" style="visibility:collapse;">
+      <td><span class="field_text">Hypotenuse c</span></td>
+      <td><input id="side_c" class="triangle-calculator__side-c" value="45"></td>
+    </tr>
+    <tr id="angle_x_display" style="visibility:collapse;">
+      <td><span class="field_text">Angle X</span></td>
+      <td><input id="angle_x" class="triangle-calculator__angle-x" value="55">&deg; (in Degree)</td>
+    </tr>
+    <tr id="angle_y_display" style="visibility:collapse;">
+      <td><span class="field_text">Angle Y</span></td>
+      <td><input id="angle_y" class="triangle-calculator__angle-y" value="50">&deg; (in Degree)</td>
+    </tr>
+    <tr>
+      <td colspan="2"><button type="button"  class="triangle-calculator__calculate" >Calculate</button></td>
+    </tr>
+    </table>
+    
+    <table class="table table-bordered">
+    <tr class="header2">
+      <td colspan="2"><span class="field_text">Results</span></td>
+    </tr> 
+    <tr id="side_c_result_display" style="visibility:visible;">
+      <td><span class="field_text">Hypotenuse c</span></td>
+      <td><span id="side_c_result" class="triangle-calculator__side-c-result">43.01</span></td>
+    </tr>
+    <tr id="side_a_result_display" style="visibility:collapse;">
+      <td width="150"><span class="field_text">Leg a</span></td>
+      <td><span id="side_a_result" class="triangle-calculator__side-a-result"></span></td>
+    </tr>
+    <tr id="side_b_result_display" style="visibility:collapse;">
+      <td ><span class="field_text">Leg b</span></td>
+      <td><span id="side_b_result" class="triangle-calculator__side-b-result"></span></td>
+    </tr>
+    <tr id="angle_x_result_display" style="visibility:visible;">
+      <td ><span class="field_text">Angle X</span></td>
+      <td><span id="angle_x_result" class="triangle-calculator__angle-x-result">35.54&deg; </span></td>
+    </tr>
+    <tr id="angle_y_result_display" style="visibility:visible;">
+      <td><span class="field_text">Angle Y</span></td>
+      <td><span id="angle_y_result" class="triangle-calculator__angle-y-result">54.46&deg; </span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Area</span></td> 
+      <td><span id="area_result" class="triangle-calculator__area-result">437.5</span></td>
+    </tr>
+    <tr>
+      <td><span class="field_text">Perimeter</span></td>
+      <td><span id="perimeter_result" class="triangle-calculator__perimeter">103.01</span></td>
+    </tr>
+    </table>
+</div>
   </main>
   <script defer src="./index.js"></script>
 </body>
