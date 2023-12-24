@@ -31,6 +31,7 @@ import triangleCalculator from './modules/triangleCalculator';
 import milToMic from './modules/milToMic';
 import cylindreVolume from './modules/cylinderVolume';
 import circumference from './modules/circumference';
+import gramsToCups from './modules/gramsToCups';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -64,4 +65,5 @@ window.addEventListener('DOMContentLoaded', () => {
     milToMic();
     cylindreVolume();
     circumference();
+    gramsToCups();
 });
