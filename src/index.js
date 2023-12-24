@@ -33,6 +33,7 @@ import cylindreVolume from './modules/cylinderVolume';
 import circumference from './modules/circumference';
 import gramsToCups from './modules/gramsToCups';
 import poundsToGrams from './modules/poundsToGrams';
+import ozToGrams from './modules/ozToGrams';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -68,4 +69,5 @@ window.addEventListener('DOMContentLoaded', () => {
     circumference();
     gramsToCups();
     poundsToGrams();
+    ozToGrams();
 });
