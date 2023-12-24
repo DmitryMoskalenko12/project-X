@@ -30,6 +30,7 @@ import ratioSimplifier from './modules/ratioSimplifier';
 import triangleCalculator from './modules/triangleCalculator';
 import milToMic from './modules/milToMic';
 import cylindreVolume from './modules/cylinderVolume';
+import circumference from './modules/circumference';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -62,4 +63,5 @@ window.addEventListener('DOMContentLoaded', () => {
     triangleCalculator();
     milToMic();
     cylindreVolume();
+    circumference();
 });
