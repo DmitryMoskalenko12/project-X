@@ -29,6 +29,7 @@ import factoring from './modules/factoring';
 import ratioSimplifier from './modules/ratioSimplifier';
 import triangleCalculator from './modules/triangleCalculator';
 import milToMic from './modules/milToMic';
+import cylindreVolume from './modules/cylinderVolume';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -60,4 +61,5 @@ window.addEventListener('DOMContentLoaded', () => {
     ratioSimplifier();
     triangleCalculator();
     milToMic();
+    cylindreVolume();
 });
