@@ -32,6 +32,7 @@ import milToMic from './modules/milToMic';
 import cylindreVolume from './modules/cylinderVolume';
 import circumference from './modules/circumference';
 import gramsToCups from './modules/gramsToCups';
+import poundsToGrams from './modules/poundsToGrams';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -66,4 +67,5 @@ window.addEventListener('DOMContentLoaded', () => {
     cylindreVolume();
     circumference();
     gramsToCups();
+    poundsToGrams();
 });
