@@ -28,6 +28,7 @@ import moneyCounter from './modules/moneyCounter';
 import factoring from './modules/factoring';
 import ratioSimplifier from './modules/ratioSimplifier';
 import triangleCalculator from './modules/triangleCalculator';
+import milToMic from './modules/milToMic';
 
 window.addEventListener('DOMContentLoaded', () => {
     timeConverter();
@@ -58,4 +59,5 @@ window.addEventListener('DOMContentLoaded', () => {
     factoring();
     ratioSimplifier();
     triangleCalculator();
+    milToMic();
 });
